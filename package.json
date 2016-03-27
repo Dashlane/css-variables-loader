@@ -1,0 +1,25 @@
+{
+  "name": "css-variable-loader",
+  "version": "1.0.0",
+  "description": "Load CSS variables with Webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dashlane/css-variable-loader.git"
+  },
+  "author": "Denis Sokolov <denis@sokolov.cc>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dashlane/css-variable-loader/issues"
+  },
+  "homepage": "https://github.com/Dashlane/css-variable-loader#readme",
+  "devDependencies": {
+    "ava": "^0.13.0"
+  },
+  "dependencies": {
+    "css": "^2.2.1"
+  }
+}
