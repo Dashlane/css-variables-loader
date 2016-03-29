@@ -4,7 +4,8 @@
   "description": "Load CSS variables with Webpack",
   "main": "src/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "ci": "ava"
   },
   "repository": {
     "type": "git",
