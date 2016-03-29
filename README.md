@@ -26,6 +26,6 @@ This project also assumes you have a Webpack-like setup for building your applic
 
 Install the loader into your project with `npm install --save css-variables-loader`.
 
-In your JavaScript, use `var variables = require('!css-variables-loader!../path/to/variables.css')`.
+In your JavaScript, use `var variables = require('!css-variables!../path/to/variables.css')`.
 
 Now `variables` is a map of variable names to values as strings.
