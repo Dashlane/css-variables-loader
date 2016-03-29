@@ -1,8 +1,8 @@
 # CSS variable loader
 
-[![npm](https://img.shields.io/npm/v/css-variable-loader.svg)](https://www.npmjs.com/package/css-variable-loader)
-[![Build Status](https://travis-ci.org/Dashlane/css-variable-loader.svg?branch=master)](https://travis-ci.org/Dashlane/css-variable-loader)
-[![Dependency Status](https://gemnasium.com/Dashlane/css-variable-loader.svg)](https://gemnasium.com/Dashlane/css-variable-loader)
+[![npm](https://img.shields.io/npm/v/css-variables-loader.svg)](https://www.npmjs.com/package/css-variables-loader)
+[![Build Status](https://travis-ci.org/Dashlane/css-variables-loader.svg?branch=master)](https://travis-ci.org/Dashlane/css-variables-loader)
+[![Dependency Status](https://gemnasium.com/Dashlane/css-variables-loader.svg)](https://gemnasium.com/Dashlane/css-variables-loader)
 
 Import your CSS variables into JavaScript.
 
@@ -24,8 +24,8 @@ This project also assumes you have a Webpack-like setup for building your applic
 
 ## Usage
 
-Install the loader into your project with `npm install --save css-variable-loader`.
+Install the loader into your project with `npm install --save css-variables-loader`.
 
-In your JavaScript, use `var variables = require('!css-variable-loader!../path/to/variables.css')`.
+In your JavaScript, use `var variables = require('!css-variables-loader!../path/to/variables.css')`.
 
 Now `variables` is a map of variable names to values as strings.
