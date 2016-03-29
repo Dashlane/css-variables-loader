@@ -1,5 +1,9 @@
 # CSS variable loader
 
+[![npm](https://img.shields.io/npm/v/css-variable-loader.svg)](https://www.npmjs.com/package/css-variable-loader)
+[![Build Status](https://travis-ci.org/Dashlane/css-variable-loader.svg?branch=master)](https://travis-ci.org/Dashlane/css-variable-loader)
+[![Dependency Status](https://gemnasium.com/Dashlane/css-variable-loader.svg)](https://gemnasium.com/Dashlane/css-variable-loader)
+
 Import your CSS variables into JavaScript.
 
 ## Assumptions
