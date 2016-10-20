@@ -30,3 +30,6 @@ check('should only import from :root',
 check('should import from :root among multiple selectors',
     ':hover, :root { --theme: red }',
     { '--theme': 'red' })
+check('should not break when there is a comment',
+  ':root { --theme: red; /* important info */ --accent: blue }',
+  { '--accent': 'blue', '--theme': 'red' })
