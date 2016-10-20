@@ -8,7 +8,7 @@ var check = function(name, css, result){
     test(name, function(t){
         var module = { exports: {} };
         eval(loader(css));
-        t.same(module.exports, result);
+        t.deepEqual(module.exports, result);
     });
 };
 
@@ -30,3 +30,6 @@ check('should only import from :root',
 check('should import from :root among multiple selectors',
     ':hover, :root { --theme: red }',
     { '--theme': 'red' })
+check('should not break when there is a comment',
+  ':root { --theme: red; /* important info */ --accent: blue }',
+  { '--accent': 'blue', '--theme': 'red' })

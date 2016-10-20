@@ -5,7 +5,7 @@ module.exports = function(source) {
   css.parse(source).stylesheet.rules
     .filter(rule => rule.selectors.some(sel => sel === ':root'))
     .forEach(rule => rule.declarations
-      .filter(decl => decl.property.indexOf('--') === 0)
+      .filter(decl => decl.type === 'declaration' && decl.property.indexOf('--') === 0)
       .forEach(decl => result[decl.property] = decl.value));
   return 'module.exports = ' + JSON.stringify(result);
 };
