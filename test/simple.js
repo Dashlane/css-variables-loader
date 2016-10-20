@@ -8,7 +8,7 @@ var check = function(name, css, result){
     test(name, function(t){
         var module = { exports: {} };
         eval(loader(css));
-        t.same(module.exports, result);
+        t.deepEqual(module.exports, result);
     });
 };
 
