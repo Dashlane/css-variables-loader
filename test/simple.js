@@ -33,3 +33,6 @@ check('should import from :root among multiple selectors',
 check('should not break when there is a comment',
   ':root { --theme: red; /* important info */ --accent: blue }',
   { '--accent': 'blue', '--theme': 'red' })
+check('should not break when there is a file-level comment',
+  '/* file info */ :root { --theme: red; /* important info */ --accent: blue }',
+  { '--accent': 'blue', '--theme': 'red' })
